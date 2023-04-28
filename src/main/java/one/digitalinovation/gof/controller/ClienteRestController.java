@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import ch.qos.logback.core.net.server.Client;
 import one.digitalinovation.gof.model.Cliente;
 import one.digitalinovation.gof.service.ClienteService;
 
@@ -22,7 +21,7 @@ public class ClienteRestController {
 	private ClienteService clienteService;
 	
 	@GetMapping
-	public ResponseEntity<Iterable<Client>> buscarTodos(){
+	public ResponseEntity<Iterable<Cliente>> buscarTodos(){
 		return ResponseEntity.ok(clienteService.buscarTodos());
 	}
 		

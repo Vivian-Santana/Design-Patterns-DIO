@@ -1,11 +1,10 @@
 package one.digitalinovation.gof.service;
 
-import ch.qos.logback.core.net.server.Client;
 import one.digitalinovation.gof.model.Cliente;
 
 public interface ClienteService {
 
-	Iterable<Client> buscarTodos();
+	Iterable<Cliente> buscarTodos();
 	
 	Cliente buscarPorId(Long id);
 	
